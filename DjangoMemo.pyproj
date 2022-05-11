@@ -47,6 +47,8 @@
     <Folder Include="mysite\mysite" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattribute" />
+    <Content Include=".gitignore" />
     <Content Include="CHEATSHEAT.md" />
     <Content Include="mysite\memo\__pycache__\urls.cpython-310.pyc" />
     <Content Include="mysite\memo\__pycache__\views.cpython-310.pyc" />
