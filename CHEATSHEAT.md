@@ -27,8 +27,14 @@ python manage.py startapp $app_name
 ### show migration sql
 > python manage.py sqlmigrate $app_name $migration_number
 
-### exec migrations of all application
-> python manage.py migrate
+### exec migrate
+> python manage.py migrate [$app_name] [$version]
+
+### reset migrations
+> python manage.py migrate $app_name zero
+
+### show migrations
+> python manage.py showmigrations [$app_name]
 
 
 ```
