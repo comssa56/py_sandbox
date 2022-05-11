@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d46e7c8f-2e86-4b0d-86fe-f5f6446ec998}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>mysite\manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>mysite\</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.10</InterpreterId>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>runserver</CommandLineArguments>
+    <WebBrowserPort>8080</WebBrowserPort>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="mysite\manage.py" />
+    <Compile Include="mysite\memo\admin.py" />
+    <Compile Include="mysite\memo\apps.py" />
+    <Compile Include="mysite\memo\migrations\__init__.py" />
+    <Compile Include="mysite\memo\models.py" />
+    <Compile Include="mysite\memo\tests.py" />
+    <Compile Include="mysite\memo\urls.py" />
+    <Compile Include="mysite\memo\views.py" />
+    <Compile Include="mysite\memo\__init__.py" />
+    <Compile Include="mysite\mysite\asgi.py" />
+    <Compile Include="mysite\mysite\settings.py" />
+    <Compile Include="mysite\mysite\urls.py" />
+    <Compile Include="mysite\mysite\wsgi.py" />
+    <Compile Include="mysite\mysite\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mysite" />
+    <Folder Include="mysite\memo\" />
+    <Folder Include="mysite\memo\migrations\" />
+    <Folder Include="mysite\memo\__pycache__\" />
+    <Folder Include="mysite\mysite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CHEATSHEAT.md" />
+    <Content Include="mysite\memo\__pycache__\urls.cpython-310.pyc" />
+    <Content Include="mysite\memo\__pycache__\views.cpython-310.pyc" />
+    <Content Include="mysite\memo\__pycache__\__init__.cpython-310.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.10" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
