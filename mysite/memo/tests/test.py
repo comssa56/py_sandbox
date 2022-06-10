@@ -1,5 +1,5 @@
 from django.test import TestCase,Client
-from .models import Memo,Tips
+from memo.models import Memo,Tips
 import json
 
 # Create your tests here.
@@ -11,11 +11,10 @@ class MyTest(TestCase):
         print(m)
 
     def test_a(self):
+        print("test a")
         c = Client()
-        response = c.get('/memo/api/memos/', 
-                         {},
-                         HTTP_ACCEPT='application/json')
-
-        print(response)
-        print(json.loads(response.content))
+        response = c.get('/memo/api/memos/', {} )
+        self.assertEqual(response.status_code, 200)
+        data = json.loads(response.content)
+        
 
