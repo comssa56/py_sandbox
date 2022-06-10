@@ -8,7 +8,6 @@ import logging
 class TipsSerializer(serializers.ModelSerializer):
     class Meta:
         model= Tips
-#        fields = ('memo', 'tips_text')
         fields = ('id', 'tips_text')
 
 class MemoSerializer(serializers.ModelSerializer):

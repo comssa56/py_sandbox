@@ -29,6 +29,7 @@
     <Compile Include="mysite\memo\apps.py" />
     <Compile Include="mysite\memo\migrations\__init__.py" />
     <Compile Include="mysite\memo\models.py" />
+    <Compile Include="mysite\memo\serializer.py" />
     <Compile Include="mysite\memo\tests.py" />
     <Compile Include="mysite\memo\urls.py" />
     <Compile Include="mysite\memo\views.py" />
